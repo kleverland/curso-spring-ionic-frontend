@@ -7,7 +7,7 @@ import { Cart } from "../models/cart";
 @Injectable()
 export class StorageService {
 
-    getLocalUSer(): LocalUser {
+    getLocalUser(): LocalUser {
         let usr = localStorage.getItem(STORAGE_KEYS.localUser);
         if (usr == null) {
             return null;
